@@ -1,16 +1,41 @@
-# React + Vite
+# Hardware Stock Management - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup
 
-Currently, two official plugins are available:
+1. **Install dependencies**
+   ```bash
+   npm install
+Start the development server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+bash
+npm start
+Backend URL
+The frontend is configured to use: https://cosmos-hardware-software.onrender.com/api
+(Change in src/services/api.js if needed)
 
-## React Compiler
+Features
+Dashboard – summary cards, low stock alerts, recent transactions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Items / Stock – add new items, issue to labs, return from labs, restock using "Central Store" lab.
 
-## Expanding the ESLint configuration
+Labs – add labs, view each lab's current inventory (calculated from transaction history).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Transactions – full history of all issues and returns.
+
+Notes
+The "Restock" button creates a special lab called Central Store (if missing) and uses a return transaction to increase main stock.
+
+Lab inventory is computed on the fly from all transactions.
+
+text
+
+---
+
+## ✅ How to Run
+
+1. Create a new folder `frontend`.
+2. Copy all the files above into the correct structure.
+3. Run `npm install` then `npm start`.
+4. Your frontend will be available at `http://localhost:3000`.
+
+The frontend is fully functional and communicates with your live backend. Enjoy managing your hardware stock!
