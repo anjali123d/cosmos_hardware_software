@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/SideBar';
 import Dashboard from './pages/Dashboard';
 import Items from './pages/Items';
 import Labs from './pages/Labs';
