@@ -34,7 +34,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            {lowStockItems.length > 0 && (
+            {/* {lowStockItems.length > 0 && (
                 <div className="card">
                     <div className="card-header">
                         <FiAlertTriangle style={{ marginRight: 8 }} /> Low Stock Items (&lt;5)
@@ -54,7 +54,7 @@ const Dashboard = () => {
                         </tbody>
                     </table>
                 </div>
-            )}
+            )} */}
 
             <div className="card">
                 <div className="card-header">Recent Transactions</div>
