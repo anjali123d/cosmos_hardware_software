@@ -11,6 +11,7 @@ const api = axios.create({
 export const getItems = () => api.get('/items');
 export const addItem = (itemData) => api.post('/items', itemData);
 
+export const updateItem = (itemId, itemData) => api.put(`/items/${itemId}`, itemData);
 // Labs
 export const getLabs = () => api.get('/labs');
 export const addLab = (labData) => api.post('/labs', labData);

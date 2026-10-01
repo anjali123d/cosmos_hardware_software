@@ -962,3 +962,19 @@ th {
         width: 100%;
     }
 }
+
+.btn-edit {
+    background: #f59e0b;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-edit:hover {
+    background: #d97706;
+}

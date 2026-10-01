@@ -50,7 +50,7 @@ const Dashboard = () => {
                                     <td style={{ color: '#ef4444', fontWeight: 'bold' }}>{item.quantity}</td>
                                     <td>{item.description || '-'}</td>
                                 </tr>
-                            ))}
+                            ))}         
                         </tbody>
                     </table>
                 </div>
